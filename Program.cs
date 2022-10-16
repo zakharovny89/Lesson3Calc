@@ -110,5 +110,9 @@ string OutputData(double firstValue, double secondValue, string sign)
 {
     instance = $"{firstValue} {sign} {secondValue} = {result}";
     FiveLastTask.Enqueue(instance);
+    if (FiveLastTask.Count > 5)
+    {
+        FiveLastTask.Dequeue();
+    }
     return instance;
 }
