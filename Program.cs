@@ -13,9 +13,9 @@ bool end = false;
 
 while (!end)
 {    
-    Console.WriteLine("If you want to solve the next task, click 'N'\r\n" +
-        "If you want to see the last five decisions, click 'L'\r\n" +
-        "If you want to exit, click 'E'");
+    Console.WriteLine("If you want to solve the Next task, click 'N'\r\n" +
+        "If you want to see the Last five decisions, click 'L'\r\n" +
+        "If you want to Exit, click 'E'");
     string WhatsNext = Console.ReadLine();
     switch (WhatsNext)
     {
